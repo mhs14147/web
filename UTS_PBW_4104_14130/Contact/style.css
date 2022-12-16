@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  cursor: pointer;
+  display: flex;
+}
+nav .logo-img{
+  height: 50px;
+  width: 50px;
+  gap: 10px;
+}
+nav .logo-title{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 925px) { 
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{ 
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    z-index: 9999;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{  
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #685e5e;
+  }
+
+}
+
+
+
+
+
+body {
+  background: url(image/background.jpg) no-repeat center;
+  background-size: cover; 
+}
+
+.contact-section{
+  padding: 40px ;
+  padding-bottom: 120PX;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+  margin-top: 100px;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+
+
+.tombol{
+  /* background-color: #212F3D;
+  padding-top: 50px;
+  padding-bottom: 50px; */
+}
+.tombol .cilck{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tombol .cilck a{
+  background: #7d2ae8;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tombol a:hover{
+  background: #6616d0;
+}
+
+/* END */
+footer {
+	padding: 20px;
+	text-align: center;
+	background: #1b1b1b;
+	color: #eaeaea;
+}

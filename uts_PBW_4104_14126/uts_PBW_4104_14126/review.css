@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.logo{
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    font-size: 0.8em;
+    justify-content: space-around;
+}
+.navbar ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+.content h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 25px;
+}
+.content h2{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.content h3{
+    color: white;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.content h4{
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: justify;
+}
+img{
+    padding-left: 30px;
+    padding-top: 10px;
+    width: auto;
+    height: 300px;
+}
+#beritarekom .Judul{
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    margin-top: 15px;
+}
+.rekomendasi{
+    width: 1000px;
+    overflow: hidden;
+    margin-top: 5px;
+    
+}
+.rekomendasi .rekomkiri{
+    width: 475px;
+    float: left;
+    margin-right: 5px;
+    padding: 0 10px 10px 10px;
+    background: #c0c0c0;
+}
+.rekomendasi p{
+    text-align: center;
+    font-family: 'Lucida Sans';
+    font-size: 12px;
+    color: black;
+    
+}
+.rekomendasi img{
+    width: 300px;
+    height: 170px;
+    box-shadow: 5px 5px 2px #333;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rekomendasi h3{
+    font-size: 15px;
+}
+.rekomkiri h3 a{
+    color: black;
+    font-size: 19px;
+    font-family: Verdana;
+}
+.rekomendasi a{
+    text-decoration: none;
+    color: black;
+}
+.rekomkanan h3 a{
+    color: black;
+    font-size: 19px;
+    font-family: Verdana;
+}
+.rekomendasi h3 a:hover{
+    color: white;
+    background: red;
+}
+.rekomendasi .button a{
+    display: inline-block;
+    padding: 3px 7px;
+    border: solid 2px #ffff;
+    text-decoration: none;
+    color: black;
+}
+.rekomendasi .button a:hover{
+    background: red;
+    color: white;
+}

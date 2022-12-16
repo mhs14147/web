@@ -1,0 +1,77 @@
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>North.me topup ML</title>
+      <link rel="stylesheet" href="Top Up/topup1.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <nav>
+         <div class="logo">
+            <img src="Images/logo.png" alt="logo" class="logo-img" />
+            <a class="logo-title">North.me</a>
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="AIndex.html">Home</a></li>
+            <li><a class="active" href="BTopUp.html">Top Up</a></li>
+            <li><a href="CTournamen.html">Tournament</a></li>
+            <li><a href="Discord.html">Discord</a></li>
+            <li><a href="EContact.html">Contact</a></li>
+         </ul>
+      </nav>
+
+      <!-- menu start -->
+      <div class="main-block">
+         <h1>FORM TOP UP MOBILE LEGEND</h1>
+         <form method="post" >
+           <div class="info">
+             <input class="fname" type="text" name="id_game" placeholder="ID GAME ANDA">
+             <input class="fname" type="text" name="telepon" placeholder="Nomor Handphone">
+             <select name="jumlah">
+               <option value="number" disabled selected>JUMLAH TOPUP DIAMON</option>
+               <option value="1">141 Diamonds Rp. 35.000</option>
+               <option value="2">220 Diamonds Rp. 50.000 </option>
+               <option value="3">366 Diamonds Rp. 80.000</option>
+               <option value="4">568 Diamonds Rp. 130.000</option>
+               <option value="5">966 Diamonds Rp. 215.000</option>
+               <option value="6">2010 Diamonds Rp. 439.000</option>
+             </select>
+           </div>
+           <h3>Metode Pembayaran</h3>
+           <div class="metod">
+             <div> 
+               <input type="radio" value="Virtual Account" id="radioOne" name="bayar" checked/>
+               <label for="radioOne" class="radio">Virtual Account</label>
+             </div>
+             <div>
+               <input type="radio" value="Kartu Kredit" id="radioTwo" name="bayar" />
+               <label for="radioTwo" class="radio">Kartu Kredit</label>
+             </div>
+             <div>
+               <input type="radio" value="QRIS" id="radioThree" name="bayar" />
+               <label for="radioThree" class="radio">QRIS</label>
+             </div>
+             <div> 
+               <input type="radio" value="Paypal" id="radioFour" name="bayar" checked/>
+               <label for="radioFour" class="radio">Paypal</label>
+             </div>
+             <div>
+               <input type="radio" value="Alfamart" id="radioFive" name="bayar" />
+               <label for="radioFive" class="radio">Alfamart</label>
+             </div>
+             <div> 
+               <input type="radio" value="Indomaret" id="radioSix" name="bayar" checked/>
+               <label for="radioSix" class="radio">Indomaret</label>
+             </div>
+           </div>
+           <button href="#" class="button">Submit</button>
+         </form>
+       </div>
+      
+   </body>
+</html>
